@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="Shift_JIS" standalone="yes" ?>
+<package><job id="UsbGMPost">
+<comment>
+下の "param" の設定を変更して、
+cscript usbgmpost.wsf
+をタスクに設定して1分おきとかに起動しよう
+</comment>
+<script language="JScript"><![CDATA[
+
+var postto = "http://drumsoft.com/gm/";
+
+var param = {
+	id    : "abc",
+	key   : "xxxxx"
+}
+
+var usbgmdata = "usbgmpost\\usbgmget.exe";
+
+]]></script>
+<script language="JScript" src="usbgmpost/sha1.js"/>
+<script language="JScript" src="usbgmpost/usbgmpost.js"/>
+</job>
+</package>
