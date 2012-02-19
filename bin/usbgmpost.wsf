@@ -7,7 +7,7 @@ cscript usbgmpost.wsf
 </comment>
 <script language="JScript"><![CDATA[
 
-var postto = "http://drumsoft.com/gm/";
+var postto = "http://gm-jp.org/gm/";
 
 var param = {
 	id    : "abc",
